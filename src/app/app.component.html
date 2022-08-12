@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/boo-
+tstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZME-
+CAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU " crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/boo-
+tstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFN-
+jaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--texto exibido na aba do navegador-->
+<title>Uninter 2022</title>
+<style type="text/css">
+<!--formatação da pagina-->
+body { position: relative; background-color: rgba(253 , 247, 247,
+0.767);}
+<!--formatação da tabela que recebe meu array-->
+.especial {font: bold; background-color: rgb(173, 241, 219); border:
+1px solid #bbb;}
+body ,head{
+position:relative;
+width: 940px; ;
+margin: auto;
+}
+</style>
+</head>
+
+<body>
+<!--titulo da pagina-->
+<h1>AGENDA UNINTER </h1>
+<div class="content"></div>
+<table class="rTable"> <!-- width para alterar a lar-
+gura da tabela e border para definir uma borda à tabela -->
+<thead>
+<tr>
+<th >NOME</th>
+<th>RU</th>
+<th>CURSO</th>
+<th>DATA DE NASCIMENTO</th>
+</tr>
+</thead>
+<tbody>
+  <tr *ngFor="let people of data">
+  <td>{{people.Name}}</td>
+  <td>{{people.RU}}</td>
+  <td>{{people.COURSE}}</td>
+  <td>{{people.BIRTH}}</td>
+  </tr>
+  </tbody>
+  </table>
+  <div></div>
+  </body>
+  </html>
